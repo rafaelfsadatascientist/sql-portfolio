@@ -1,5 +1,5 @@
 --StrataScratch: Monthly Percentage Difference
--- Postgree SQL
+-- Dialect: Postgree SQL
 --Level: Hard
 --Tables: sf_transactions(created_at,id,purchase_id,value)
 --Concepts: CTE'S, Lag, Round, Extract
