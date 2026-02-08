@@ -1,5 +1,5 @@
 --DataLemur: Final Account Balance
--- Dialect: Postgree SQL
+-- Dialect: PostgreSQL
 --Level: Easy
 --Tables: transactions(transaction_id,account_id,amount,transaction_type)
 --Concepts: Sum, Case When, Group by

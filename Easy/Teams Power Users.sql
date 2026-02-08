@@ -1,5 +1,5 @@
 --DataLemur: Teams Power Users
--- Dialect: Postgree SQL
+-- Dialect: PostgreSQL
 --Level: Easy 
 --Tables: messages(message_id,sender_id,receiver_id,content,sent_date)
 --Concepts: Limit, Extract, Group by, Order by

@@ -1,8 +1,8 @@
 --DataLemur: Card Launch Sucess
--- Dialect: Postgree SQL
+-- Dialect: PostgreSQL
 --Level: Medium
 --Tables: monthly_cards_issued(issue_month,issue_year,card_name,issued_amount)
---Concepts: Rank, Dates, CTE,s
+--Concepts: Rank, Dates, CTEs
 
 with creating_dates as(SELECT 
 card_name,
