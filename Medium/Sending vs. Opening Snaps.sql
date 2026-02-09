@@ -1,5 +1,5 @@
 
---StrataScratch: Sending vs. Opening Snaps
+--DataLemur: Sending vs. Opening Snaps
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: activities(activity_id,user_id,activity_type,time_spent,activity_date) & age_breakdown(user_id,age_bucket)
