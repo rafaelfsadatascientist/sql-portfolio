@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: ms_user_dimension(acc_id,user_id) & ms_acc_dimension(acc_id,paying_customer) & ms_download_facts(date,downloads,user_id)
---Concepts: Joins, CTEs, Where, Case When
+--Concepts: JOINs, CTEs, CASE WHEN
 
 WITH auxiliar_cte AS (
     SELECT

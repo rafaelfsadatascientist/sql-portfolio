@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: customer(address,city,first_name,id,last_name,phone_number) & orders(cust_id,id,order_date,order_details,total_order_cost)
---Concepts: CTEs, Joins, Where, NULLS
+--Concepts: CTEs, JOINs, BETWEEN, NULLs
 
 WITH customers_in_date_range AS (
     SELECT 

@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: user_flags(flag_id,user_firstname,user_lastname,video_id) & flag_review(flag_id,reviewed_by_yt,reviewed_date,reviewed_outcome)
---Concepts: CTEs, Ranks, Joins, Where
+--Concepts: CTEs, RANKs, JOINs
 
 WITH number_of_videos AS (
     SELECT

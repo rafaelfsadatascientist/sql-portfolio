@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: orders(order_id,item)
---Concepts: CTEs, Window Functions, Case When
+--Concepts: CTEs, Window Functions, CASE WHEN
 
 WITH auxiliar_cte AS (
     SELECT

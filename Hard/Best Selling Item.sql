@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: online_retail(country,customerid,description,invoicedate,invoiceno,quantity,stockcode,unitprice)
---Concepts: CTEs, Like, Ranks
+--Concepts: CTEs, LIKE, RANKs
 
 WITH total_sales_amount AS (
     SELECT

@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: amazon_transactions(created_at,id,item,revenue,user_id)
---Concepts: CTEs, Ranks, Window Functions, Between 
+--Concepts: CTEs, RANKs, Window Functions, BETWEEN
 
 WITH auxiliar_cte AS (
     SELECT

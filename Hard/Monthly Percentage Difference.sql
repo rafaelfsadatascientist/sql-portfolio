@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: sf_transactions(created_at,id,purchase_id,value)
---Concepts: CTEs, Lag, Round, Extract
+--Concepts: CTEs, LAG, ROUND , EXTRACT
 
 WITH cte_monthly_revenue AS (
     SELECT

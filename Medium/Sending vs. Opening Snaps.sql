@@ -3,7 +3,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: activities(activity_id,user_id,activity_type,time_spent,activity_date) & age_breakdown(user_id,age_bucket)
---Concepts: Round, Joins, Cast, Case When
+--Concepts: ROUND, JOINs, CAST, CASE WHEN
 
 WITH calculating_times AS (
     SELECT 
