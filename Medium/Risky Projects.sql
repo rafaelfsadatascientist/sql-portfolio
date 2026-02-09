@@ -3,7 +3,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: linkedin_projects(budget,end_date,id,start_date,title) & linkedin_emp_projects(emp_id,project_id) & linkedin_employees(first_name,id,last_name,salary)
---Concepts: Having, Ceil, Group by, Join
+--Concepts: Having, Ceil, Group by, Joins
 
 WITH prorated_cost_per_employee AS (
     SELECT
