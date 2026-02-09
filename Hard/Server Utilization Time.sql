@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: server_utilization(server_id,status_time,session_status)
---Concepts: Windom Functions, FLOOR, JOINs
+--Concepts: Window Functions, FLOOR, JOINs
 
 WITH start_rank_CTE AS (
     SELECT
