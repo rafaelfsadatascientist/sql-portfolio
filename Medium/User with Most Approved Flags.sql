@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: user_flags(flag_id,user_firstname,user_lastname,video_id) & flag_review(flag_id,reviewed_by_yt,reviewed_date,reviewed_outcome)
---Concepts: CTEs, RANKs, JOINs
+--Key Concepts: CTEs, RANKs, JOINs
 
 WITH number_of_videos AS (
     SELECT
@@ -25,4 +25,4 @@ creating_rank AS (
 SELECT 
     username
 FROM creating_rank
-WHERE number_of_videos_rank = 1
+WHERE number_of_videos_rank = 1;
