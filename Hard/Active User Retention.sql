@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: user_actions(user_id,event_id,event_type,event_date) 
---Concepts: CTEs, EXTRACT, Subqueries, Filtering
+--Key Concepts: CTEs, EXTRACT, Subqueries, Filtering
 
 WITH July_CTE AS (
     SELECT 
@@ -28,4 +28,4 @@ SELECT
     mth
 FROM July_CTE
 WHERE user_id IN (SELECT user_id FROM June_CTE)
-GROUP BY mth
+GROUP BY mth;
