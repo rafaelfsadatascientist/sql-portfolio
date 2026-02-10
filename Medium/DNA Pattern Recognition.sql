@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: Samples(sample_id,dna_sequence,species)
---Concepts: CASE WHEN, LIKE
+--Key Concepts: CASE WHEN, LIKE
 
 SELECT
     *,
