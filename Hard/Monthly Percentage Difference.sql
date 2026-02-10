@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: sf_transactions(created_at,id,purchase_id,value)
---Concepts: CTEs, LAG, ROUND , EXTRACT
+--Key Concepts: CTEs, LAG, ROUND , EXTRACT
 
 WITH cte_monthly_revenue AS (
     SELECT
@@ -25,4 +25,4 @@ SELECT
         100 * (total_revenue - previous_revenue)::numeric / previous_revenue,
         2
     ) AS revenue_diff_pct
-FROM cte_revenue_lag
+FROM cte_revenue_lag;
