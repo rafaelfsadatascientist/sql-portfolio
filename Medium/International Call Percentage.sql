@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: phone_calls(caller_id,receiver_id,call_time) & phone_info(caller_id,country_id,network,phone_number)
---Concepts: CTEs, JOINs, CASE WHEN, ROUND
+--Key Concepts: CTEs, JOINs, CASE WHEN, ROUND
 
 WITH caller_cte AS (
     SELECT 
@@ -29,4 +29,4 @@ SELECT
         / COUNT(*)),
         1
     ) AS international_calls_pct
-FROM receiver_cte
+FROM receiver_cte;
