@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: callers(policy_holder_id,case_id,call_category,call_date,call_duration_secs)
---Concepts: LAG, ROUND, CTEs
+--Key Concepts: LAG, ROUND, CTEs
 
 WITH long_calls_CTE AS (
     SELECT
@@ -44,4 +44,4 @@ SELECT
         ),
         1
     ) AS long_calls_growth_pct
-FROM LAG_CTE
+FROM LAG_CTE;
