@@ -38,8 +38,8 @@ December_CTE AS (
     WHERE mth = 12
 )
 SELECT
-    January_CTE.country;
+    January_CTE.country
 FROM January_CTE
 INNER JOIN December_CTE
     ON January_CTE.country = December_CTE.country
-   AND January_CTE.nc_rank < December_CTE.nc_rank
+   AND January_CTE.nc_rank < December_CTE.nc_rank;
