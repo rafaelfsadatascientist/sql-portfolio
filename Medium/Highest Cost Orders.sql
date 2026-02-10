@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: customers(address,city,first_name,id,last_name,phone_number) & orders(cust_id,id,order_date,order_details,total_order_cost)
---Concepts: JOINs, CTEs, Window Functions, BETWEEN
+--Key Concepts: JOINs, CTEs, Window Functions, BETWEEN
 
 WITH daily_total_order_cost AS (
     SELECT
@@ -28,4 +28,4 @@ SELECT
 FROM highest_daily_total_order_cost AS hd_total_order_cost
 INNER JOIN customers 
     ON customers.id = hd_total_order_cost.cust_id
-WHERE hd_total_order_cost.daily_total_order_cost = hd_total_order_cost.highest_daily_total_order_cost
+WHERE hd_total_order_cost.daily_total_order_cost = hd_total_order_cost.highest_daily_total_order_cost;
