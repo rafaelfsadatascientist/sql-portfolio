@@ -3,7 +3,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: activities(activity_id,user_id,activity_type,time_spent,activity_date) & age_breakdown(user_id,age_bucket)
---Concepts: ROUND, JOINs, CAST, CASE WHEN
+--Key Concepts: ROUND, JOINs, CAST, CASE WHEN
 
 WITH calculating_times AS (
     SELECT 
@@ -20,4 +20,4 @@ SELECT
     age_bucket,
     ROUND(((time_spent_opening::NUMERIC) / total_time) * 100, 2) AS open_perc,
     ROUND(((time_spent_sending::NUMERIC) / total_time) * 100, 2) AS send_perc
-FROM calculating_times
+FROM calculating_times;
