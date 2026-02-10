@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: ms_user_dimension(acc_id,user_id) & ms_acc_dimension(acc_id,paying_customer) & ms_download_facts(date,downloads,user_id)
---Concepts: JOINs, CTEs, CASE WHEN
+--Key Concepts: JOINs, CTEs, CASE WHEN
 
 WITH auxiliar_cte AS (
     SELECT
@@ -40,6 +40,6 @@ FROM paying_users
 LEFT JOIN non_paying_users
     ON paying_users.date = non_paying_users.date
 WHERE non_paying > paying
-order by 1 asc
+order by 1 asc;
 
 -- This query could be written with fewer CTEs using CASE WHEN
