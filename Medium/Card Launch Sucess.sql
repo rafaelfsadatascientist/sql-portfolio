@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: monthly_cards_issued(issue_month,issue_year,card_name,issued_amount)
---Concepts: RANKs, DATEs, CTEs
+--Key Concepts: RANKs, DATEs, CTEs
 
 WITH creating_dates AS (
     SELECT
