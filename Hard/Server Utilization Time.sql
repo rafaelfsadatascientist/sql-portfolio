@@ -43,7 +43,7 @@ INNER JOIN stop_rank_CTE
    AND start_rank_CTE.start_rank = stop_rank_CTE.stop_rank;
 
 -- This solution relies heavily on the problem assumptions.
--- JUSTIFY_INTERVAL could be used as an alternative to handle the interval sum.
+-- JUSTIFY_INTERVAL or EPOCH could be used as an alternative to handle the interval sum.
 
 
 
