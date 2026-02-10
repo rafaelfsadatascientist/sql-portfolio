@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: orders(order_id,item)
---Concepts: CTEs, Window Functions, CASE WHEN
+--Key Concepts: CTEs, Window Functions, CASE WHEN
 
 WITH auxiliar_cte AS (
     SELECT
@@ -23,4 +23,4 @@ SELECT
         ELSE auxiliar_column
     END AS corrected_order_id
 FROM auxiliar_cte
-ORDER BY 2
+ORDER BY 2;
