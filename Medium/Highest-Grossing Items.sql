@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: product_spend(category,product,user_id,spend,transaction_date)
---Concepts: CTEs, RANKs
+--Key Concepts: CTEs, RANKs
 
 WITH total_spend_CTE AS (
     SELECT 
@@ -24,4 +24,4 @@ SELECT
     product,
     total_spend
 FROM creating_rank
-WHERE total_spend_rank IN (1, 2)
+WHERE total_spend_rank IN (1, 2);
