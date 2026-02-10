@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: course_completions(user_id,course_id,course_name,completion_date,course_rating)
---Concepts: CTEs, LEAD, HAVING, Joins, UPPER
+--Key Concepts: CTEs, LEAD, HAVING, Joins, UPPER
 
 WITH top_performing_students AS (
     SELECT
