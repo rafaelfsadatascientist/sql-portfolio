@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: user_transactions(product_id,user_id,spend,transaction_date)
---Concepts: Window Functions, CTEs
+--Key Concepts: Window Functions, CTEs
 
 WITH most_recent_date_CTE AS (
     SELECT
@@ -22,4 +22,4 @@ GROUP BY
     user_id,
     transaction_date
 ORDER BY
-    transaction_date
+    transaction_date;
