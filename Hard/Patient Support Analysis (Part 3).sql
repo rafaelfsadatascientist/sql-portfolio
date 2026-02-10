@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: callers(policy_holder_id,case_id,call_category,call_date,call_duration_secs)
---Concepts: LAG, DISTINCT, INTERVALs
+--Key Concepts: LAG, DISTINCT, INTERVALs
 
 WITH previous_call_date_CTE AS (
     SELECT
@@ -17,4 +17,4 @@ WITH previous_call_date_CTE AS (
 SELECT
     COUNT(DISTINCT policy_holder_id) AS policy_holder_count
 FROM previous_call_date_CTE
-WHERE call_date - previous_call_date <= INTERVAL '7 days'
+WHERE call_date - previous_call_date <= INTERVAL '7 days';
