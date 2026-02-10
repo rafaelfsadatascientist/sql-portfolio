@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: amazon_transactions(created_at,id,item,revenue,user_id)
---Concepts: CTEs, RANKs, Window Functions, BETWEEN
+--Key Concepts: CTEs, RANKs, Window Functions, BETWEEN
 
 WITH auxiliar_cte AS (
     SELECT
@@ -15,4 +15,4 @@ SELECT
     user_id
 FROM auxiliar_cte
 WHERE created_at_rank = 2
-  AND intervals BETWEEN 1 AND 7
+  AND intervals BETWEEN 1 AND 7;
