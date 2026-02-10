@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Medium
 --Tables: insurance(pid,tiv_2015,tiv_2016,lat,lon)
---Concepts: HAVING, CTEs, JOINs
+--Key Concepts: HAVING, CTEs, JOINs
 
 WITH city_CTE AS (
     SELECT
@@ -34,4 +34,4 @@ FROM city_CTE
 INNER JOIN same_tiv_2015_CTE
     ON city_CTE.tiv_2015 = same_tiv_2015_CTE.tiv_2015
 INNER JOIN same_city_CTE
-    ON city_CTE.city = same_city_CTE.city
+    ON city_CTE.city = same_city_CTE.city;
