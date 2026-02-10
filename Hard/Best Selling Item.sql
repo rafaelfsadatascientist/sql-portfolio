@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: online_retail(country,customerid,description,invoicedate,invoiceno,quantity,stockcode,unitprice)
---Concepts: CTEs, LIKE, RANKs
+--Key Concepts: CTEs, LIKE, RANKs
 
 WITH total_sales_amount AS (
     SELECT
@@ -30,4 +30,4 @@ SELECT
     description,
     total_sales_amount
 FROM creating_rank
-WHERE total_sales_amount_rank = 1
+WHERE total_sales_amount_rank = 1;
