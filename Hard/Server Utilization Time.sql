@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: server_utilization(server_id,status_time,session_status)
---Concepts: Window Functions, FLOOR, JOINs
+--Key Concepts: Window Functions, FLOOR, JOINs
 
 WITH start_rank_CTE AS (
     SELECT
@@ -40,7 +40,7 @@ SELECT
 FROM start_rank_CTE
 INNER JOIN stop_rank_CTE
     ON start_rank_CTE.server_id = stop_rank_CTE.server_id
-   AND start_rank_CTE.start_rank = stop_rank_CTE.stop_rank
+   AND start_rank_CTE.start_rank = stop_rank_CTE.stop_rank;
 
 -- This solution relies heavily on the problem assumptions.
 -- JUSTIFY_INTERVAL could be used as an alternative to handle the interval sum.
