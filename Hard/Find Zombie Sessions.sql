@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: app_events(event_id,user_id,event_timestamp,event_type,session_id,event_value)
---Concepts: CASE WHEN, HAVING, CTE'S, Window Functions
+--Key Concepts: CASE WHEN, HAVING, CTE'S, Window Functions
 
 WITH auxiliar_CTE AS (
     SELECT
@@ -25,4 +25,4 @@ HAVING COUNT(CASE WHEN event_type = 'purchase' THEN 1 ELSE NULL END) = 0
    AND (COUNT(CASE WHEN event_type = 'click' THEN 1 ELSE NULL END)::NUMERIC)
        / COUNT(CASE WHEN event_type = 'scroll' THEN 1 ELSE NULL END) < 0.2
    AND COUNT(CASE WHEN event_type = 'scroll' THEN 1 ELSE NULL END) >= 5
-ORDER BY 4 DESC, 1 ASC
+ORDER BY 4 DESC, 1 ASC;
