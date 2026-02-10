@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: fb_comments_count(created_at,number_of_comments,user_id) & fb_active_users(country,name,status,user_id)
---Concepts: CTEs, RANKs, JOINs
+--Key Concepts: CTEs, RANKs, JOINs
 
 WITH number_of_comments_CTE AS (
     SELECT
@@ -38,7 +38,7 @@ December_CTE AS (
     WHERE mth = 12
 )
 SELECT
-    January_CTE.country
+    January_CTE.country;
 FROM January_CTE
 INNER JOIN December_CTE
     ON January_CTE.country = December_CTE.country
