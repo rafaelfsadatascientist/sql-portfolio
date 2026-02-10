@@ -2,7 +2,7 @@
 -- Dialect: PostgreSQL
 --Level: Hard
 --Tables: user_flags(flag_id,user_firstname,user_lastname,video_id) & flag_review(flag_id,reviewed_by_yt,reviewed_date,reviewed_outcome)
---Concepts: CTEs, CASE WHEN, RANKs
+--Key Concepts: CTEs, CASE WHEN, RANKs
 
 WITH flags_count_CTE AS (
     SELECT
@@ -33,4 +33,4 @@ INNER JOIN user_flags AS uf
 INNER JOIN flag_review AS fr
     ON fr.flag_id = uf.flag_id
 WHERE cr.flags_rank = 1
-GROUP BY cr.video_id
+GROUP BY cr.video_id;
